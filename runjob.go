@@ -11,7 +11,7 @@ package jobrunner
 import (
 	"time"
 
-	"github.com/robfig/cron/v3"
+	"github.com/simcosoft/cron/v3"
 )
 
 // Callers can use jobs.Func to wrap a raw func.

@@ -6,7 +6,7 @@ import (
 	"runtime/debug"
 	"sync"
 
-	"github.com/robfig/cron/v3"
+	"github.com/simcosoft/cron/v3"
 )
 
 type Job struct {

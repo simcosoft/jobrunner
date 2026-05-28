@@ -1,7 +1,7 @@
 package jobrunner
 
 import (
-	"github.com/robfig/cron/v3"
+	"github.com/simcosoft/cron/v3"
 )
 
 const DEFAULT_JOB_POOL_SIZE = 10
