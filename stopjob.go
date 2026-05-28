@@ -3,7 +3,7 @@ package jobrunner
 import (
 	"context"
 
-	"github.com/robfig/cron/v3"
+	"github.com/simcosoft/cron/v3"
 )
 
 // Stop stops the scheduler and returns a context that is done
