@@ -1,10 +1,16 @@
 package jobrunner
 
-import "github.com/robfig/cron/v3"
+import (
+	"context"
 
-// Stop ALL active jobs from running at the next scheduled time
-func Stop() {
-	go MainCron.Stop()
+	"github.com/robfig/cron/v3"
+)
+
+// Stop stops the scheduler and returns a context that is done
+// when all running jobs have completed. Call <-Stop().Done() to wait
+// for a graceful shutdown.
+func Stop() context.Context {
+	return MainCron.Stop()
 }
 
 // Remove a specific job from running
