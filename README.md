@@ -4,14 +4,14 @@ JobRunner is a framework for performing work asynchronously. It comes with cron 
 
 ## Install
 
-`go get github.com/bamzi/jobrunner`
+`go get github.com/simcosoft/jobrunner`
 
 ### Setup
 
 ```go
 package main
 
-import "github.com/bamzi/jobrunner"
+import "github.com/simcosoft/jobrunner"
 
 func main() {
     jobrunner.Start() // optional: jobrunner.Start(pool int, concurrent int) (10, 1)
@@ -70,15 +70,6 @@ Here are some examples of what we use JobRunner for:
 - Suggest new features
 - Improve/fix documentation
 
-## Credits
-- [revel jobs module](https://github.com/revel/modules/tree/master/jobs) - Origin of JobRunner
-- [robfig cron v3](https://github.com/robfig/cron/tree/v3) - github.com/robfig/cron/v3
-- [contributors](https://github.com/bamzi/jobrunner/graphs/contributors)
-
-### Author 
-**Bam Azizi**
-Github: [@bamzi](https://github.com/bamzi)
-Twitter: [@bamazizi](https://twitter/bamazizi)
 
 #### License
 MIT
